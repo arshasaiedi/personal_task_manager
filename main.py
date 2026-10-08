@@ -1,14 +1,13 @@
-name = input("what is your name")
-print("welcome", name)
+from tasks import add_task, show_tasks
+
+name = input("what is your name? ")
+print("welcome,", name)
 
 tasks = []
+how_many = int(input("how many tasks? "))
 
-amount_of_tasks = int(input("how many tasks do you want to add?"))
+for i in range(how_many):
+    task = input("enter a task: ")
+    add_task(tasks, task)
 
-for i in range(amount_of_tasks):
-    task = input("enter task: ")
-    tasks.append(task)
-
-print("your tasks are:")
-for task in tasks:
-    print(task)
+show_tasks(tasks)
