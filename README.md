@@ -24,6 +24,8 @@ A simple task manager built with Python
   - Asks for the user's name
   - Lets the user add multiple tasks
   - Shows all the tasks
+  - Lets you choose a priority (low, medium, high) for each task
+  - Keeps asking until you type a valid priority
 - Task Storage
   - Saves tasks in `tasks.txt`
   - Loads the saved tasks when the program starts
@@ -119,9 +121,11 @@ what is your name? Arsha
 welcome, Arsha
 how many tasks? 2
 enter a task: sleep
-enter a task: eat 
-sleep
-eat
+enter the priority of the task (low/medium/high): high
+enter a task: eat
+enter the priority of the task (low/medium/high): medium
+sleep - high
+eat - medium
 ```
 
 ## Screenshot
@@ -142,6 +146,7 @@ eat
 - [x] show all tasks
 - [x] save tasks to a file
 - [x] add admin mode
+- [x] add priority to tasks
 - [ ] add a nice list
 - [ ] mark tasks as done
 - [ ] delete tasks
