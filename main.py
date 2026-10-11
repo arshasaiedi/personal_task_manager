@@ -20,7 +20,8 @@ how_many = int(input("how many tasks? "))
 
 for i in range(how_many):
     task = input("enter a task: ")
-    add_task(tasks, task)
+    priority = input("enter the priority of the task (low/medium/high): ")
+    add_task(tasks, task, priority)
 
 show_tasks(tasks)
 
